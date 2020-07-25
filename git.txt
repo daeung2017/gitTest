@@ -1,0 +1,45 @@
+const { init } = require("./routes/codi")
+
+깃 - 깃 레포지토리라고 불리는 데이터 저장소에 소스코드나 리소스를 넣어서 이용
+깃허브 - 이런 깃 레포지토리를 인터넷상에서 제공하는 호스팅 서비스
+
+깃 - 이전 상태로 되돌릴수 있다.
+
+### ctrl+` 터미널 열기
+
+1.초기화
+git init
+git config --global user.name "본인 닉네임"
+git config --global user.email "본인 이메일"
+
+### 이전 명령어 복사 '화살표 위쪽'
+
+git config user.name
+git config user.email
+
+git status
+
+
+2.변경사항 더하기(스테이징) git add
+git add -A 모든 변경사항을 반영. 좋은 방법 아님.
+
+dog 파일 생성 후
+git add dog
+git commit -m "add dog file" 
+
+3.변경사항 반영하기 git commit
+git commit -m "원하는 메시지"
+
+4.반영사항 확인하기 git log
+
+5.이전 상태로 되돌리기 git reset
+로그를 아예 지워버림 - 복구 불가
+
+git reset 커밋번호여섯자리 --hard
+
+5.이전 상태로 되돌리기2 git revert
+
+복구가능
+
+git revert ******
+vi에디터가 열리게 되는제 저장하고 닫으려면 :wq
